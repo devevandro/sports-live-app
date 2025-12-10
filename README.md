@@ -1,4 +1,4 @@
-# Wave Sports Live
+# Sports Live
 
 Aplicativo desktop Electron + Vite + React focado em transmissões esportivas ao vivo.
 
