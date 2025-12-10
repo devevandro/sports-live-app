@@ -2,9 +2,10 @@
 
 import { useState } from "react";
 import { VideoSidebar } from "./video-sidebar";
+import { channels } from "shared/constants";
 
-// Lista de vídeos ao vivo simulados (em produção, viria de uma API)
-const liveVideos = [] as any[];
+const { App } = window;
+const liveVideos = await App.checkChannelsLive(channels);
 
 export function YouTubePlayer() {
   const [selectedVideo, setSelectedVideo] = useState(liveVideos[0]);
